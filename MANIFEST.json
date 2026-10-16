@@ -1,0 +1,23 @@
+{
+  "project": "IKI IT Helpdesk Ticketing System",
+  "organization": "PT Industri Kapal Indonesia (Persero)",
+  "version": "1.0",
+  "status": "draft-for-validation",
+  "files": [
+    "API_SPEC.md",
+    "DATABASE_SCHEMA.md",
+    "DECISIONS_AND_OPEN_QUESTIONS.md",
+    "DEPLOYMENT_GUIDE.md",
+    "ERD.md",
+    "MVP_BACKLOG.md",
+    "PRD.md",
+    "README.md",
+    "ROLE_PERMISSION_MATRIX.md",
+    "TEST_PLAN.md",
+    "UI_UX_SPEC.md",
+    "VIBE_CODING_PROMPT.md",
+    "WORKFLOW_SPEC.md",
+    "docs/README.md"
+  ],
+  "note": "SLA, cloud, database, identity provider, and integration assumptions require confirmation before production."
+}
