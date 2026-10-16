@@ -35,39 +35,48 @@ Aplikasi ini memusatkan seluruh pelaporan insiden, permintaan layanan, pemelihar
 ## 🚀 Panduan Instalasi & Menjalankan Lokal
 
 ### 1. Clone Repositori
+
 ```bash
 git clone https://github.com/sankeq/IT-Helpdesk.git
 cd IT-Helpdesk
 ```
 
 ### 2. Pasang Dependensi
+
 ```bash
 composer install
 npm install
 ```
 
 ### 3. Konfigurasi Environment
+
 Salin berkas konfigurasi `.env.example`:
+
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
 
 ### 4. Migrasi & Seeder Database
+
 Jalankan migrasi database beserta data master & akun simulasi:
+
 ```bash
 php artisan migrate:fresh --seed
 ```
 
 ### 5. Kompilasi Aset Frontend
+
 ```bash
 npm run build
 ```
 
 ### 6. Jalankan Server Pengembangan
+
 ```bash
 php artisan serve
 ```
+
 Akses aplikasi melalui browser di: `http://127.0.0.1:8000`
 
 ---
@@ -81,17 +90,32 @@ Semua akun pengujian menggunakan kata sandi default: `password`
 | **Super Admin** | `admin@iki.co.id` | Akses penuh seluruh modul dan konfigurasi master data |
 | **IT Supervisor** | `supervisor.it@iki.co.id` | Pengawasan antrean, delegasi teknisi, laporan & approval |
 | **IT Agent (Teknisi)** | `agent.budi@iki.co.id` | Pengerjaan tiket, catatan internal, dan manajemen artikel |
-| **Karyawan (Requester)**| `staff.andi@iki.co.id` | Pembuatan tiket, pelacakan status, dan rating kepuasan (CSAT) |
+| **Karyawan (Requester)** | `staff.andi@iki.co.id` | Pembuatan tiket, pelacakan status, dan rating kepuasan (CSAT) |
 
 ---
 
 ## 🧪 Pengujian Otomatis (Automated Tests)
 
 Aplikasi dilengkapi pengujian komprehensif (Unit & Feature Tests):
+
 ```bash
 php artisan test --compact
 ```
+
 *Status: 79 tests passed, 367 assertions (100% pass).*
+
+---
+
+## 📖 Dokumentasi Teknis
+
+Dokumentasi rancangan sistem, skema basis data, spesifikasi API, dan panduan pengujian tersimpan lengkap di dalam folder [`docs/`](docs/README.md):
+
+- [Product Requirements Document (PRD)](docs/PRD.md)
+- [Database Schema & ERD](docs/DATABASE_SCHEMA.md)
+- [Workflow Specification](docs/WORKFLOW_SPEC.md)
+- [Role & Permission Matrix](docs/ROLE_PERMISSION_MATRIX.md)
+- [Deployment & Runbook](docs/DEPLOYMENT_GUIDE.md)
+- [Index Dokumentasi Lengkap](docs/README.md)
 
 ---
 
